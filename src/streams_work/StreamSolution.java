@@ -38,7 +38,7 @@ public class StreamSolution {
 
         System.out.println();
         System.out.println("=================");
-        //Skip from 1 to 5 and print onwards 6 to 9
+        //Skip from 1 to 5 and print onwards 6 to 9. Last Number in skip() is inclusive
         IntStream.range(1, 10).skip(5).forEach(x -> System.out.print(x + " "));
         //output: 6 7 8 9
 

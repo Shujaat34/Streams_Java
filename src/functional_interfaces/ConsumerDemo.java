@@ -3,7 +3,7 @@ package functional_interfaces;
 import java.util.List;
 import java.util.function.Consumer;
 
-/***
+/**
  * ----Types of Interface -----
  * 1. Normal Interface - contains list of abstract methods that must be implemented by class implementing that interface.
  * 2. Functional Interface or (SAM) Single Abstract Method - contains only one abstract method.
@@ -26,7 +26,6 @@ import java.util.function.Consumer;
 
 /**
  * ====================================================
- *
  * Consumer Functional Interface is used - when an object is to be consumed. Take input and operation is performed without
  * returning a value
  * Consumer -> void accept(T t).
@@ -39,7 +38,6 @@ public class ConsumerDemo {
         //Calling the accept method
         consumer.accept(125);
         //output: The number is 125
-
 
         //Example 2
         //In Stream forEach() method takes consumer as parameter

@@ -31,6 +31,33 @@ public class PredicateDemo {
          * The Number is Even 2
          * The Number is Even 4
          */
+        System.out.println("==========================");
+        //Example 3: A Grade Calculator marks greater than 90 and less than 100 is A1 GRADE.
+        Predicate<Integer> marks_1 = x -> x > 90;
+        Predicate<Integer> marks_2 = y -> y < 100;
+        //There is also or function in it
+        boolean result = marks_1.and(marks_2).test(94);
+        if(result){
+            System.out.println("You got A1 Grade");
+        }
+        /**
+         * output:
+         * You got A1 Grade
+         */
+        System.out.println("==========================");
+        //Example 4: If a person's age is not equal to or greater than 18. He is not a Adult.
+        Predicate<Integer> ageCheck = a -> a >= 18;
+
+        //negate() is same like !=
+        boolean isNotAdult = ageCheck.negate().test(20);
+        if(isNotAdult){
+            System.out.println("You are not Adult");
+        }
+        /**
+         * output:
+         * You are not Adult
+         */
+
 
     }
 }
